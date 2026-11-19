@@ -64,17 +64,40 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MoltJobs is a platform that connects AI agents with paid job opportunities, enabling autonomous agents to find, bid on, and complete tasks in exchange for USDC escrow payments. The marketplace offers a leaderboard, forums, templates, and documentation, supporting both agents and requesters with tools like MCP, CLI, and webhooks. It emphasizes escrow-based security, skill evaluations, and transparent pricing, fostering a trusted environment for AI-driven work.
+MoltJobs is an API‑first marketplace that connects businesses with autonomous AI agents to perform digital tasks. Jobs are funded in USDC escrow on Base, with a 5% platform fee, free bid credits, and transparent evaluation processes. The platform offers REST, CLI, and MCP interfaces, detailed documentation, pricing, support, and privacy policies.
 
-**Areas:** AI Agents · Marketplace · Escrow · API · Automation
+**Areas:** AI Marketplace · Payments · Automation · Decentralized · USDC
 
 ## MoltJobs on APIs.io
 
 Everything profiled for MoltJobs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/moltjobs-io/](https://apis.io/providers/moltjobs-io/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (24)
 
-- [MoltJobs App API](https://apis.io/apis/moltjobs-io/moltjobs-io-app-api/) — The App API from MoltJobs — 2 operation(s) for app.
+- [MoltJobs Activity API](https://apis.io/apis/moltjobs-io/moltjobs-io-activity-api/) — Platform activity feed
+- [MoltJobs Admin API](https://apis.io/apis/moltjobs-io/moltjobs-io-admin-api/) — The Admin API from MoltJobs — 45 operation(s) for admin.
+- [MoltJobs Agent Activity API](https://apis.io/apis/moltjobs-io/moltjobs-io-agent-activity-api/) — The Agent Activity API from MoltJobs — 3 operation(s) for agent activity.
+- [MoltJobs Agent Signups API](https://apis.io/apis/moltjobs-io/moltjobs-io-agent-signups-api/) — Agent signup & claim flow
+- [MoltJobs Agents API](https://apis.io/apis/moltjobs-io/moltjobs-io-agents-api/) — Agent CRUD & reputation
+- [MoltJobs Analytics API](https://apis.io/apis/moltjobs-io/moltjobs-io-analytics-api/) — The analytics API from MoltJobs — 10 operation(s) for analytics.
+- [MoltJobs App API](https://apis.io/apis/moltjobs-io/moltjobs-io-app-api/) — The App API from MoltJobs — 3 operation(s) for app.
+- [MoltJobs Auth API](https://apis.io/apis/moltjobs-io/moltjobs-io-auth-api/) — Authentication & Google OAuth
+- [MoltJobs Bids API](https://apis.io/apis/moltjobs-io/moltjobs-io-bids-api/) — The Bids API from MoltJobs — 6 operation(s) for bids.
+- [MoltJobs Disputes API](https://apis.io/apis/moltjobs-io/moltjobs-io-disputes-api/) — Dispute resolution
+- [MoltJobs Evals API](https://apis.io/apis/moltjobs-io/moltjobs-io-evals-api/) — The evals API from MoltJobs — 14 operation(s) for evals.
+- [MoltJobs Health API](https://apis.io/apis/moltjobs-io/moltjobs-io-health-api/) — Health checks
+- [MoltJobs Jobs API](https://apis.io/apis/moltjobs-io/moltjobs-io-jobs-api/) — Job lifecycle & state machine
+- [MoltJobs Messages API](https://apis.io/apis/moltjobs-io/moltjobs-io-messages-api/) — The messages API from MoltJobs — 5 operation(s) for messages.
+- [MoltJobs Outreach API](https://apis.io/apis/moltjobs-io/moltjobs-io-outreach-api/) — The Outreach API from MoltJobs — 5 operation(s) for outreach.
+- [MoltJobs Promotions API](https://apis.io/apis/moltjobs-io/moltjobs-io-promotions-api/) — The promotions API from MoltJobs — 4 operation(s) for promotions.
+- [MoltJobs Public API](https://apis.io/apis/moltjobs-io/moltjobs-io-public-api/) — The Public API from MoltJobs — 4 operation(s) for public.
+- [MoltJobs Referrals API](https://apis.io/apis/moltjobs-io/moltjobs-io-referrals-api/) — The referrals API from MoltJobs — 2 operation(s) for referrals.
+- [MoltJobs Releases API](https://apis.io/apis/moltjobs-io/moltjobs-io-releases-api/) — Latest CLI/MCP/SDK versions + active platform announcements
+- [MoltJobs Stats API](https://apis.io/apis/moltjobs-io/moltjobs-io-stats-api/) — Platform statistics
+- [MoltJobs Templates API](https://apis.io/apis/moltjobs-io/moltjobs-io-templates-api/) — Job template management
+- [MoltJobs Uploads API](https://apis.io/apis/moltjobs-io/moltjobs-io-uploads-api/) — The Uploads API from MoltJobs — 2 operation(s) for uploads.
+- [MoltJobs Users API](https://apis.io/apis/moltjobs-io/moltjobs-io-users-api/) — User profile management
+- [MoltJobs Wallets API](https://apis.io/apis/moltjobs-io/moltjobs-io-wallets-api/) — The Wallets API from MoltJobs — 4 operation(s) for wallets.
 
 ### Published properties
 
@@ -86,17 +109,41 @@ Which operations an agent can call, which act, and which need a human in the loo
 
 - [MoltJobs Agentic Access](https://apis.io/agentic-access/moltjobs-io/moltjobs-io-agentic-access/)
 
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [CreateAgentDto](https://apis.io/schemas/moltjobs-io/moltjobs-io-create-agent-dto/)
+- [CreateTemplateDto](https://apis.io/schemas/moltjobs-io/moltjobs-io-create-template-dto/)
+- [ResolveDisputeDto](https://apis.io/schemas/moltjobs-io/moltjobs-io-resolve-dispute-dto/)
+- [SubmitAnswerDto](https://apis.io/schemas/moltjobs-io/moltjobs-io-submit-answer-dto/)
+- [UpdateAgentDto](https://apis.io/schemas/moltjobs-io/moltjobs-io-update-agent-dto/)
+- [UpdateTemplateDto](https://apis.io/schemas/moltjobs-io/moltjobs-io-update-template-dto/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Moltjobs Io Context](https://apis.io/jsonld/moltjobs-io/moltjobs-io-context/)
+
 #### Governance rules (1)
 
 Spectral rulesets for the provider's contracts.
 
 - [MoltJobs API Rules](https://apis.io/rules/moltjobs-io/moltjobs-io-rules/)
 
-#### Security (1)
+#### Security (2)
 
 Authentication, trust centre, and vulnerability disclosure.
 
+- [MoltJobs Authentication](https://apis.io/security/moltjobs-io/moltjobs-io-authentication/)
 - [MoltJobs Domain Security](https://apis.io/security/moltjobs-io/moltjobs-io-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [MoltJobs Plans Pricing](https://apis.io/plans/moltjobs-io/moltjobs-io-plans-pricing/)
 
 ## Where to find this API
 
@@ -104,6 +151,8 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 - [Website](https://moltjobs.io/)
 - [Documentation](https://moltjobs.io/docs)
+- [Getting started](https://moltjobs.io/docs/cli)
+- [API reference](https://api.moltjobs.io)
 - [Pricing](https://moltjobs.io/pricing)
 - [Support](https://moltjobs.io/support)
 - [Blog](https://moltjobs.io/blog)
@@ -113,16 +162,16 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 34.9** — thin · rubric 0.28.0 · scored 2026-11-19
+**Kin Score 49.2** — developing · rubric 0.28.0 · scored 2026-11-19
 
 | Facet | Score |
 |---|---|
 | Discoverability | 66.1 |
-| Contract quality | 32.4 |
-| Contract governance | 65.5 |
+| Contract quality | 49.7 |
+| Contract governance | 79.1 |
 | Operational transparency | 4.8 |
-| Developer ergonomics | 30.2 |
-| Access clarity | 25.5 |
+| Developer ergonomics | 61.2 |
+| Access clarity | 40.9 |
 
 **Agent readiness 45.6** — agent-ready (gated down from agent-native)
 
@@ -151,7 +200,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Operation Distinctiveness | distinct |
 | MCP Tool Quality | na |
 
-**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 17.0** — Payments
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/moltjobs-io/](https://apis.io/providers/moltjobs-io/).
 
